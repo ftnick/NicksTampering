@@ -1,0 +1,19 @@
+[
+    {
+      "id": "1",
+      "title": "Example Script 1",
+      "description": "This is an example Tampermonkey script. It does something cool.",
+      "author": "Nick",
+      "version": "1.0",
+      "code": "// Your Tampermonkey script code here"
+    },
+    {
+      "id": "2",
+      "title": "Example Script 2",
+      "description": "This is another example Tampermonkey script. It does something even cooler.",
+      "author": "Nick",
+      "version": "1.1",
+      "code": "// Your Tampermonkey script code here"
+    }
+  ]
+  
