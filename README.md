@@ -21,7 +21,7 @@ You can install Tampermonkey via their website, https://www.tampermonkey.net/, o
 2. **Browse Scripts**: Explore the `scripts` tab on the website to discover a variety of scripts tailored for different purposes.
 3. **Install Scripts**: Click on a script to view its details, then click the "Install" button to add it to Tampermonkey.
 4. **Customize and Enjoy**: Once installed, customize script settings as needed and enjoy an enhanced browsing experience!
-(Note: Scripts are compatible with the latest versions of Google Chrome, Firefox, and Microsoft Edge. Version infomation and compatiblity will be indivivals displayed in each script's details page.)
+(Important Note: Scripts are fully compatible with the latest versions of Google Chrome, Firefox, and Microsoft Edge. For specific version information and compatibility details, please refer to each script's individual details page.)
 
 ## License
 
