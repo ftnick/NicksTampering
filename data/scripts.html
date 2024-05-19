@@ -24,7 +24,7 @@
         <p>&copy; 2024 NicksTampering</p>
     </footer>-->
     <script>
-        fetch('https://ftnick.github.io/NicksTampering/data/data.json')
+        fetch('https://ftnick.github.io/NicksTampering/data/data.json', {cache: 'no-store'})
             .then(response => response.json())
             .then(data => {
                 const scriptList = document.getElementById('scriptList');

@@ -25,7 +25,7 @@
         const scriptId = urlParams.get('id');
         const party3rd = urlParams.get('local')
         
-        fetch(`https://ftnick.github.io/NicksTampering/data/data.json`)
+        fetch(`https://ftnick.github.io/NicksTampering/data/data.json`, {cache: 'no-store'})
             .then(response => response.json())
             .then(data => {
                 const script = data.find(script => script.id === scriptId);
