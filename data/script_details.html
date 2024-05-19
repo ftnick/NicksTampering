@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Script Details</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Script Details</h1>
     </header>
     <nav>
-        <a href="index.html">Home</a>
+        <a href="../index.html">Home</a>
         <a href="scripts.html">Scripts</a>
     </nav>
     <section id="scriptDetails">
         <!-- Script details will be dynamically added here -->
     </section>
-    <footer>
+    <!--<footer>
         <p>&copy; 2024 NicksTampering</p>
-    </footer>
+    </footer>-->
     <script>
-        // JavaScript code to fetch and display script details based on the ID from the URL query parameter
         const urlParams = new URLSearchParams(window.location.search);
         const scriptId = urlParams.get('id');
+        const party3rd = urlParams.get('local')
         
         fetch(`https://ftnick.github.io/NicksTampering/data/scripts.json`)
             .then(response => response.json())
@@ -33,14 +34,44 @@
                     const title = document.createElement('h2');
                     title.textContent = script.title;
                     scriptDetails.appendChild(title);
+
                     const description = document.createElement('p');
                     description.textContent = script.description;
                     scriptDetails.appendChild(description);
-                    // You can add more details here, such as author, version, etc.
+
+                    const scripturl = document.createElement('p');
+                    scripturl.textContent = "Script URL: " + script.url;
+                    scriptDetails.appendChild(scripturl);
+
+                    const author = document.createElement('p');
+                    author.textContent = "Author: " + script.author;
+                    scriptDetails.appendChild(author);
+
+                    const version = document.createElement('p');
+                    version.textContent = "Version: " + script.version;
+                    scriptDetails.appendChild(version);
                 } else {
-                    const errorParagraph = document.createElement('p');
-                    errorParagraph.textContent = "Script not found!";
-                    scriptDetails.appendChild(errorParagraph);
+                    if (scriptId) {
+                        if (!party3rd) {
+                            const errorParagraph = document.createElement('h2');
+                            errorParagraph.textContent = "This link is broken, please request a new link from the provider.\nError: The requested ID was not found";
+                            scriptDetails.appendChild(errorParagraph);
+                        } else {
+                            const errorParagraph = document.createElement('h2');
+                            errorParagraph.textContent = "The requested ID was not found.";
+                            scriptDetails.appendChild(errorParagraph);
+                        }
+                    } else {
+                        if (!party3rd) {
+                            const errorParagraph = document.createElement('h2');
+                            errorParagraph.innerHTML = "This link is broken, please request a new link from the provider.<br>Error: The requested ID was not found";
+                            scriptDetails.appendChild(errorParagraph);
+                        } else {
+                            const errorParagraph = document.createElement('h2');
+                            errorParagraph.textContent = "A script ID was not provided.";
+                            scriptDetails.appendChild(errorParagraph);
+                        }
+                    }
                 }
             })
             .catch(error => console.error('Error fetching script details:', error));
