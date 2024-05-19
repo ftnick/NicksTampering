@@ -5,7 +5,15 @@
       "description": "Removes the 'Remember: Everything Characters say is made up!' in c.ai",
       "author": "ftnick",
       "version": "1.0.0",
-      "url": "https://greasyfork.org/en/scripts/495443-c-ai-unnecessary-text-remover"
+      "url": "https://greasyfork.org/en/scripts/495443"
+    },
+    {
+      "id": "376881",
+      "title": "Roblox Library Spam Trasher",
+      "description": "Automatically hides free robux bot spam comments in Roblox library.",
+      "author": "Brosy518241",
+      "version": "1.0.0",
+      "url": "https://greasyfork.org/en/scripts/376881"
     },
     {
         "id": "0",
