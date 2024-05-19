@@ -6,6 +6,14 @@
       "author": "ftnick",
       "version": "1.0.0",
       "url": "https://greasyfork.org/en/scripts/495443-c-ai-unnecessary-text-remover"
+    },
+    {
+        "id": "-1",
+        "title": "Test",
+        "description": "Test",
+        "author": "Test",
+        "version": "1.0.0",
+        "url": "https://example.com"
     }
   ]
   
