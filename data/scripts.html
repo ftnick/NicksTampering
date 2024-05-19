@@ -11,8 +11,8 @@
         <h1>NicksTampering Scripts</h1>
     </header>
     <nav>
-        <a href="../index.html">Home</a>
-        <a href="scripts.html">Scripts</a>
+        <a href="https://ftnick.github.io/NicksTampering">Home</a>
+        <a href="scripts">Scripts</a>
     </nav>
     <section>
         <h2>All Scripts</h2>
@@ -24,14 +24,14 @@
         <p>&copy; 2024 NicksTampering</p>
     </footer>-->
     <script>
-        fetch('https://ftnick.github.io/NicksTampering/data/scripts.json')
+        fetch('https://ftnick.github.io/NicksTampering/data/data.json')
             .then(response => response.json())
             .then(data => {
                 const scriptList = document.getElementById('scriptList');
                 data.forEach(script => {
                     const listItem = document.createElement('li');
                     const link = document.createElement('a');
-                    link.href = `script_details.html?id=${script.id}`;
+                    link.href = `script?id=${script.id}`;
                     link.textContent = script.title;
                     listItem.appendChild(link);
                     scriptList.appendChild(listItem);
