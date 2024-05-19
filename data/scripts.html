@@ -31,7 +31,7 @@
                 data.forEach(script => {
                     const listItem = document.createElement('li');
                     const link = document.createElement('a');
-                    link.href = `script?id=${script.id}`;
+                    link.href = `script?id=${script.id}&local=true`;
                     link.textContent = script.title;
                     listItem.appendChild(link);
                     scriptList.appendChild(listItem);
