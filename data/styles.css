@@ -1,6 +1,6 @@
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
+            padding: 50px;
             margin: 0;
             padding: 0;
         }
@@ -36,5 +36,5 @@
             width: 100%;
         }
         header, nav, section, footer {
-            padding: 10px; /* Adjust this value as needed */
+            padding: 15px; /* Adjust this value as needed */
         }

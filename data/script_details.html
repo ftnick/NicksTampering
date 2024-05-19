@@ -40,7 +40,7 @@
                     scriptDetails.appendChild(description);
 
                     const scripturl = document.createElement('p');
-                    scripturl.textContent = "Script URL: " + script.url;
+                    scripturl.innerHTML = "Script URL: <a href='" + script.url + "'>" + script.url + "</a>";
                     scriptDetails.appendChild(scripturl);
 
                     const author = document.createElement('p');
