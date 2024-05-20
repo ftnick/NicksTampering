@@ -38,3 +38,14 @@
         header, nav, section, footer {
             padding: 15px; /* Adjust this value as needed */
         }
+        #scriptList li {
+            margin-bottom: 10px; /* Adjust the margin as needed */
+          }
+        #scriptList li a {
+            text-decoration: none;
+            color: black; /* Change the color as needed */
+          }
+          #scriptList li a:hover {
+            text-decoration: underline;
+            color: black; /* Change the color as needed */
+          }

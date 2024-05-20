@@ -30,6 +30,11 @@
             .then(data => {
                 const script = data.find(script => script.id === scriptId);
                 if (script) {
+                    if (script.id.toLowerCase().includes("e")) {
+                        console.log(toString(script.id))
+                        script.url = "EXAMPLE SCRIPT"
+                    }
+
                     const scriptDetails = document.getElementById('scriptDetails');
                     const title = document.createElement('h2');
                     title.textContent = script.title;

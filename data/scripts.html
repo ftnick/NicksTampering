@@ -35,7 +35,7 @@
             setTimeout(function () {
               const listItem = document.createElement("li");
               const link = document.createElement("a");
-              link.href = `script?id=${script.id}&local=true`;
+              link.href = `script.html?id=${script.id}&local=true`;
               link.textContent = script.title + " [ID:"+ script.id +"]";
               listItem.appendChild(link);
               scriptList.appendChild(listItem);
