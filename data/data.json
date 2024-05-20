@@ -1,27 +1,82 @@
 [
-    {
+  {
       "id": "495443",
       "title": "C.AI Unnecessary Text Remover",
       "description": "Removes the 'Remember: Everything Characters say is made up!' in c.ai",
       "author": "ftnick",
       "version": "1.0.0",
       "url": "https://greasyfork.org/en/scripts/495443"
-    },
-    {
+  },
+  {
       "id": "376881",
       "title": "Roblox Library Spam Trasher",
       "description": "Automatically hides free robux bot spam comments in Roblox library.",
       "author": "Brosy518241",
       "version": "1.0.0",
       "url": "https://greasyfork.org/en/scripts/376881"
-    },
-    {
-        "id": "0",
-        "title": "Test",
-        "description": "Test",
-        "author": "Test",
-        "version": "1.0.0",
-        "url": "https://example.com"
-    }
-  ]
-  
+  },
+  {
+      "id": "E876943",
+      "title": "Facebook News Feed Cleaner",
+      "description": "Removes sponsored posts and suggested friends from your Facebook news feed.",
+      "author": "SocialBlocker",
+      "version": "2.1.0",
+      "url": "https://greasyfork.org/en/scripts/876943"
+  },
+  {
+      "id": "E734520",
+      "title": "YouTube Ad Skipper",
+      "description": "Automatically skips ads on YouTube videos, ensuring uninterrupted viewing.",
+      "author": "AdSkipMaster",
+      "version": "3.5.2",
+      "url": "https://greasyfork.org/en/scripts/734520"
+  },
+  {
+      "id": "E245677",
+      "title": "Twitter Dark Mode Enabler",
+      "description": "Forces Twitter to display in dark mode, reducing eye strain during nighttime browsing.",
+      "author": "DarkThemeFan",
+      "version": "1.2.0",
+      "url": "https://greasyfork.org/en/scripts/245677"
+  },
+  {
+      "id": "E998765",
+      "title": "Reddit Infinite Scroll",
+      "description": "Enables infinite scrolling on Reddit, allowing you to seamlessly browse through posts.",
+      "author": "ScrollMaster",
+      "version": "2.0.1",
+      "url": "https://greasyfork.org/en/scripts/998765"
+  },
+  {
+      "id": "E347829",
+      "title": "Amazon Price Tracker",
+      "description": "Tracks the prices of items on Amazon and notifies you when they drop.",
+      "author": "PriceWatcher",
+      "version": "1.5.3",
+      "url": "https://greasyfork.org/en/scripts/347829"
+  },
+  {
+      "id": "E543210",
+      "title": "Instagram Image Downloader",
+      "description": "Adds a download button to Instagram posts, allowing you to save images directly.",
+      "author": "InstaDownloader",
+      "version": "1.1.0",
+      "url": "https://greasyfork.org/en/scripts/543210"
+  },
+  {
+      "id": "E752934",
+      "title": "Gmail Unsubscriber",
+      "description": "Automatically unsubscribes you from unwanted mailing lists in Gmail.",
+      "author": "UnsubscribeMaster",
+      "version": "1.0.0",
+      "url": "https://greasyfork.org/en/scripts/752934"
+  },
+  {
+      "id": "E685432",
+      "title": "Twitch Ad Blocker",
+      "description": "Blocks ads on Twitch streams, providing a seamless viewing experience.",
+      "author": "AdBlockTwitch",
+      "version": "2.2.1",
+      "url": "https://greasyfork.org/en/scripts/685432"
+  }
+]
