@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1>NicksTampering Scripts</h1>
+      <h1>Scripts</h1>
     </header>
     <nav>
       <a href="https://ftnick.github.io/NicksTampering">Home</a>
@@ -16,14 +16,13 @@
     </nav>
     <section>
       <h2>All Scripts</h2>
-      <strong>PLEASE NOTE: IF THE SCRIPT HAS AN 'E' NEXT TO THE ID ITS AN EXAMPLE SCRIPT.</strong>
       <ul id="scriptList">
-        <!-- Scripts will be dynamically added here -->
+
       </ul>
     </section>
-    <!--<footer>
-        <p>&copy; 2024 NicksTampering</p>
-    </footer>-->
+    <footer>
+        <p></p>
+    </footer>
     <script>
       fetch("https://ftnick.github.io/NicksTampering/data/data.json", {
         cache: "no-store",
@@ -36,7 +35,13 @@
               const listItem = document.createElement("li");
               const link = document.createElement("a");
               link.href = `script.html?id=${script.id}&local=true`;
-              link.textContent = script.title + " [ID:"+ script.id +"]";
+              link.textContent = script.title;
+              link.addEventListener("mouseover", () => {
+                link.textContent = script.title + " [ID:" + script.id + "]";
+              });
+              link.addEventListener("mouseout", () => {
+                link.textContent = script.title;
+              });
               listItem.appendChild(link);
               scriptList.appendChild(listItem);
             }, 100 * index); // 1000 milliseconds = 1 second

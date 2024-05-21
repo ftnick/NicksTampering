@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NicksTampering</title>
     <link rel="stylesheet" href="data/styles.css">
+    <style>
+        .updates {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #f9f9f9;
+        }
+        .updates h3 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,9 +28,22 @@
     <section>
         <h2>Home</h2>
         <p>Welcome to NicksTampering, your hub for Tampermonkey scripts!</p>
+        <article>
+            <p>NicksTampering provides a variety of Tampermonkey scripts designed to enhance your browsing experience. Our scripts are carefully crafted to add functionality and customization to popular websites and web applications.</p>
+            <p>Whether you're looking for tools to boost productivity, improve accessibility, or simply personalize your favorite websites, NicksTampering has you covered.</p>
+            <p>Stay tuned for updates and new releases as our collection continues to grow!</p>
+        </article>
     </section>
-    <!--<footer>
-        <p>&copy; 2024 NicksTampering</p>
-    </footer>-->
+    <section class="updates">
+        <h3>Updates & Announcements</h3>
+        <p>Check out our latest updates:</p>
+        <ul id="updateList">
+
+        </ul>
+    </section>
+    <footer>
+        <p></p>
+    </footer>
+    <script src="data/update.js"></script>
 </body>
 </html>

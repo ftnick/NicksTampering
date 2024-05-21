@@ -26,6 +26,9 @@
         #scriptDetails {
             padding: 20px;
         }
+        .important {
+            color: rgb(180, 0, 0);
+        }
         footer {
             background-color: #333;
             color: #fff;

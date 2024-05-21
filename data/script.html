@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Script Details</h1>
+        <h1 id="doctitle">Script Details</h1>
     </header>
     <nav>
         <a href="https://ftnick.github.io/NicksTampering">Home</a>
@@ -17,9 +17,9 @@
     <section id="scriptDetails">
         <!-- Script details will be dynamically added here -->
     </section>
-    <!--<footer>
-        <p>&copy; 2024 NicksTampering</p>
-    </footer>-->
+    <footer>
+        <p></p>
+    </footer>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const scriptId = urlParams.get('id');
@@ -37,7 +37,10 @@
 
                     const scriptDetails = document.getElementById('scriptDetails');
                     const title = document.createElement('h2');
+                    const doctitle = document.getElementById('doctitle');
+
                     title.textContent = script.title;
+                    doctitle.textContent = "Script (" + script.id + ") Details";
                     scriptDetails.appendChild(title);
 
                     const description = document.createElement('p');
@@ -56,10 +59,12 @@
                     version.textContent = "Version: " + script.version;
                     scriptDetails.appendChild(version);
                 } else {
+                    const doctitle = document.getElementById('doctitle');
+                    doctitle.textContent = "?";
                     if (scriptId) {
                         if (!party3rd) {
                             const errorParagraph = document.createElement('h2');
-                            errorParagraph.textContent = "This link is broken, please request a new link from the provider.\nError: The requested ID was not found";
+                            errorParagraph.innerHTML = "This link is broken, please request a new link from the provider.<br>Error: The requested ID was not found";
                             scriptDetails.appendChild(errorParagraph);
                         } else {
                             const errorParagraph = document.createElement('h2');
